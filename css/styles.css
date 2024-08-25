@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(#7A1CAC, #AD49E1);
+    color: #f1f1f1;
+}
+
+.hero-section {
+    padding: 100px 0;
+    background-color: #2E073F;
+    color: #fff;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #fff;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline-item {
+    padding: 20px;
+    position: relative;
+    background-color: #222;
+    border-radius: 6px;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 15px;
+    border-style: solid;
+}
+
+.timeline-item.left {
+    left: 0;
+}
+
+.timeline-item.left::after {
+    left: 100%;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #222;
+}
+
+.timeline-item.right {
+    left: 50%;
+}
+
+.timeline-item.right::after {
+    right: 100%;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #222 transparent transparent;
+}
+
+.timeline-content {
+    color: #f1f1f1;
+}
+
+footer {
+    background-color: #3c1053;
+}
